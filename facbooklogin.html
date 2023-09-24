@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook Login</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            display: flex;
+            margin: 150px 50px;
+            gap: 20px;
+        }
+        .form{
+            border: 1px solid #eee;
+            width: 350px;
+            padding: 25px;
+            box-shadow: 0px 0px 10px lightgrey;
+            margin-left: 350px;
+            height: 350px;
+        }
+        input{
+            border: 1px solid #eee;
+            border-radius: 8px;
+            width: 100%;
+            padding: 10px;
+            margin: 15px 5px;
+            font-size: large;
+            font-family: sans-serif;
+        }
+        button{
+            border: 1px solid rgb(46, 74, 228);
+            border-radius: 12px;
+            color: white;
+            background-color: rgb(46, 74, 228);
+            width: 100%;
+            font-size: 18px;
+            margin: 5px;
+            padding: 12px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        #create{
+            border: 1px solid rgb(46, 228, 82);
+            border-radius: 12px;
+            color: white;
+            background-color: rgb(46, 228, 82);
+            width: 80%;
+            font-size: 16px;
+            margin: 8px 35px;
+            padding: 12px;
+            text-align: center;
+
+        }
+        span{
+            text-align: center;
+            color: rgb(46, 74, 228);
+            margin: 25px 80px;
+        }
+        a{
+            text-decoration: none;
+            margin: 25px 0px;
+        }
+        hr{
+            margin-top: 15px;
+        }
+
+        h1{
+            color: rgb(46, 74, 228);
+            font-size: 65px;
+            margin-top: 85px;
+        }
+        p{
+            font-size: 15px;
+            font-weight: 400;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <h1>facebook</h1>
+            <p>Facebook helps you connect and share <br>with the people in your life.</p>
+        </div>
+        <div class="form">
+            <form action="">
+                <div class="container">
+                    <input type="text" placeholder="Email or Phone number" name="username" id="usr"><br>
+        
+                    <input type="password" placeholder="Password" name="password" id="pass"><br>
+        
+                    <button type="submit">Login</button><br>
+    
+                    <span><a href="">Forgotten Password?</a></span><br>
+    
+                    <hr><br>
+    
+                    <button id="Create">Create new account</button><br>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

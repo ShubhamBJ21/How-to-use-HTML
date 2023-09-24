@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .heading{
+            display: flex;
+            margin-left: 650px;            
+        }
+        h2{
+            font-family: algerian;
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 35px;
+        }
+        .square{
+            width: 50px;
+            height: 50px;
+            background-color: #df0c60;
+            animation-name: square;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            margin-top: 35px;
+            margin-left: 5px;
+        }
+        @keyframes square {
+            to{
+                transform: rotate(360deg);
+                margin-left: 180px;
+                border-radius: 90%;
+                width: 10px;
+            }
+        }
+        .main{
+            border: 1px solid #020202;
+            width: 450px;
+            margin: 25px 550px;
+            box-shadow: 10px 10px 15px #020202;
+        }
+        .main:hover{
+            border-radius: 15%;
+            transform: rotate(360deg);
+        }
+        .imgcontainer{
+            text-align: center;
+            margin: 20px 0px;
+        }
+        img{
+            border-radius: 50%;
+        }
+        .container{
+            margin: 5px 30px;
+            font-family: sans-serif;
+        }
+        label{
+            font-size: large;
+            margin: 15px 0px ;
+        }
+        input{
+            padding: 8px 15px;
+            margin: 10px 0px;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button{
+            width: 100%;
+            font-family: algerian;
+            padding: 10px 30px;
+            background-color: #020202;
+            color: aliceblue;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        button:hover{
+            background-color: #df0c60;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h2>Login Form</h2>
+        <div class="square"></div>
+    </div>
+    <form action="">
+        <div class="main">
+            <div class="imgcontainer">
+                <img src="logo.jpg" alt="profile">
+            </div>
+            <div class="container">
+                <label for="Username"><b>Username:</b></label><br>
+                <input type="text" placeholder="Enter Username" name="username" id="usr"><br>
+    
+                <label for="password"><b>Password:</b></label><br>
+                <input type="password" placeholder="Enter Password" name="password" id="pass"><br>
+    
+                <button type="submit" onclick="validate()">Login</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        let usr1 = "shubham";
+        let pass1 = "Shubham123";
+
+        function validate(){
+            let usr2 = document.getElementById("usr").value;
+        let pass2 = document.getElementById("pass").value;
+
+        if((usr1 === usr2) && (pass1 === pass2)){
+            open('list.html');
+        }
+        else{
+            alert("Wrong Credentials");
+        }
+        }
+    </script>
+
+</body>
+</html>

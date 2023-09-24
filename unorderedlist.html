@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Tag</title>
+
+    <style>
+        *{
+            margin: 0px;
+        }
+        .card{
+            width: 450px;
+            border: 1px solid lightgrey;
+            border-radius: 15px;
+            margin: 0px auto;
+            padding: 10px 15px;
+            box-shadow: 0px 0px 30px grey;
+        }
+        .card-img{
+            width: 100%;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: blue;
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <marquee behavior="scroll" direction="left"><h1> <img style="width: 45px; height: 45px;" src="https://i.pinimg.com/originals/52/b5/dd/52b5dd9a255dbd603b0b4a56115dba5c.gif" alt=""> How To Make a TEA!!! 😍</h1></marquee>
+    <marquee behavior="alternate" direction="right"><h1> 😍 How To Make a TEA!!!👌</h1></marquee> -->
+    <marquee behavior="scroll" direction="left" ><h1> 😍 How To Make a TEA!!! <img style="width: 45px; height: 45px;" src="https://i.pinimg.com/originals/52/b5/dd/52b5dd9a255dbd603b0b4a56115dba5c.gif" alt=""></h1></marquee>
+    
+
+    <!-- <marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="" direction="right">😍😍😍</marquee> -->
+
+   <div class="card">
+          <img src="https://source.unsplash.com/1600x1000/?tea" alt="" class="card-img">
+          <h3>Ingredients to make a tea: </h3>
+          <ul>
+            <li>water</li>
+            <li>Sugar</li>
+            <li>Tea Powder</li>
+            <li>Milk</li>
+          </ul>
+          <h3>How to make a tea</h3>
+          <a href="https://foodviva.com/tea-recipes/milk-tea-recipe/" target="_blank">Milk Tea Receipe</a>
+   </div>
+
+   <div>
+    <!-- <marquee onmouseover="demo1()" onmouseout="demo2()" direction="right" id="hrt">
+        cath me
+    </marquee> -->
+   </div>
+    
+
+   <script>
+        let hrt = document.getElementById("hrt");
+        demo1 => {
+            hrt.stop();
+            hrt.innerHTML = "I had cached you";
+        }
+        demo2 => {
+            hrt.start();
+            hrt.innerHTML = "Catch me";
+        }
+   </script>
+</body>
+</html>
